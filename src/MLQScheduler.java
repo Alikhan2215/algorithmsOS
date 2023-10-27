@@ -4,7 +4,7 @@ import java.util.List;
 public class MLQScheduler {
     public static void main(String[] args) {
         List<List<Process>> priorityQueues = new ArrayList<>();
-        int numQueues = 3; // Number of priority queues (you can adjust this)
+        int numQueues = 3; // Number of priority queues
 
         // Initialize multiple priority queues
         for (int i = 0; i < numQueues; i++) {
@@ -14,10 +14,9 @@ public class MLQScheduler {
         priorityQueues.get(0).add(new Process("Process A", 0, 4));
         priorityQueues.get(1).add(new Process("Process B", 1, 7));
         priorityQueues.get(2).add(new Process("Process C", 2, 5));
-        // Add more processes as needed
 
         for (List<Process> queue : priorityQueues) {
-            // Implement the scheduling algorithm for this queue (e.g., FCFS, Round Robin)
+            // Implement the scheduling algorithm for this queue
             runFCFS(queue); // Example: FCFS scheduling
         }
     }
