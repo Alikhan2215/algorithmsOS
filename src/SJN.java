@@ -16,7 +16,7 @@ public class SJN {
             int shortestIndex = findShortestJob(SJNes, currentTime);
 
             if (shortestIndex == -1) {
-                // No job is available to run at this time.
+                // No job is available to run at this time
                 currentTime++;
             } else {
                 SJN shortestJob = SJNes.remove(shortestIndex);
